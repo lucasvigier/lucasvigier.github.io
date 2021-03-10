@@ -200,6 +200,16 @@ img {
     transform: translateX(25px);
   }
 }
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .section-title {
   padding: 0 15px;
   flex: 0 0 100%;
@@ -501,6 +511,11 @@ img {
 .about-section .tab-content {
   flex: 0 0 100%;
   max-width: 100%;
+  display: none;
+}
+.about-section .tab-content.active {
+  display: block;
+  animation: fade-in-top 0.5s ease;
 }
 .about-section .skills {
   padding: 0 0 40px;
@@ -538,7 +553,8 @@ img {
   position: absolute;
   border-radius: 10px;
 }
-.about-section .experience {
+.about-section .experience,
+.about-section .education {
   padding-bottom: 80px;
 }
 .about-section .timeline {

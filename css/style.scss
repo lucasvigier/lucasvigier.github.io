@@ -368,6 +368,10 @@ img {
           }
         }
 
+        a.active {
+          color: var(--skin-color);
+        }
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -471,7 +475,7 @@ img {
 /*-------------------------------------------------------ABOUT--------------------------------------------------------*/
 
 .about-section {
-  padding: 80px 0 80px;
+  padding: 80px 0 0;
   min-height: 100vh;
 
   .about-img {
@@ -539,6 +543,81 @@ img {
 
     .btn-1 {
       margin: 30px 20px 0 0;
+    }
+  }
+
+  .about-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+
+    .tab-item {
+      display: inline-block;
+      margin: 0 5px 10px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      color: var(--text-black-600);
+      font-weight: 500;
+      text-transform: capitalize;
+
+      &:hover:not(.active) {
+        opacity: 0.5;
+      }
+    }
+
+    .tab-item.active {
+      color: var(--skin-color);
+    }
+  }
+
+  .tab-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .skills {
+    padding: 0 0 40px;
+
+    .skill-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 15px;
+      margin-bottom: 40px;
+
+      p {
+        font-size: 16px;
+        color: var(--text-black-600);
+        margin: 0 0 10px;
+      }
+
+      .progress {
+        height: 20px;
+        border-radius: 10px;
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--text-black-600);
+          margin-top: -40px;
+        }
+      }
+
+      .progress-bar {
+        background-color: var(--text-black-600);
+        height: 8px;
+        left: 7px;
+        top: 7px;
+        position: absolute;
+        border-radius: 10px;
+      }
     }
   }
 }

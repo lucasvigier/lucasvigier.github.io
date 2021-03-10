@@ -489,6 +489,36 @@ img {
         border-radius: 5px;
       }
     }
+
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        color: var(--text-black-600);
+        margin: 0 4px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        i {
+          line-height: 40px;
+        }
+
+        &:hover {
+          color: var(--skin-color);
+        }
+
+        &::after {
+          border-radius: 50%;
+        }
+      }
+    }
   }
 
   .about-info {

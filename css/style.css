@@ -153,6 +153,10 @@ img {
     border: none;
 }
 
+.btn-1 a i {
+    margin-right: 15px;
+}
+
 .btn-1:after {
     border-radius: 30px;
 }

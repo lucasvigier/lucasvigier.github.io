@@ -163,7 +163,7 @@ img {
   border-radius: 30px;
 }
 
-a.link-item.btn-1 > i {
+a.link-item.btn-1>i {
   margin-right: 5px;
 }
 
@@ -247,26 +247,31 @@ a.link-item.btn-1 > i {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes topBounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(25px);
   }
 }
 
 @keyframes leftBounce {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(25px);
   }
@@ -277,6 +282,7 @@ a.link-item.btn-1 > i {
     opacity: 0;
     transform: translateY(-25px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -357,10 +363,12 @@ preloader
 }
 
 @keyframes loaderAni {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-30px);
   }
@@ -471,6 +479,7 @@ navigation menu
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -820,17 +829,11 @@ about section
   z-index: -1;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(odd)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
   right: -30px;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(even)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before {
   left: -30px;
 }
 

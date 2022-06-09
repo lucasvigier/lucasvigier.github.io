@@ -1,4 +1,5 @@
 @media (max-width: 991px) {
+
   .portfolio-section .portfolio-item,
   .service-section .service-item {
     flex: 0 0 50%;
@@ -7,6 +8,7 @@
 }
 
 @media (max-width: 767px) {
+
   .contact-section .w-50,
   .contact-section .contact-item,
   .portfolio-popup .description,
@@ -87,10 +89,7 @@
     margin-bottom: 0;
   }
 
-  .about-section
-    .timeline
-    .timeline-item:nth-child(odd)
-    .timeline-item-inner:before {
+  .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
     left: -30px;
     right: auto;
   }

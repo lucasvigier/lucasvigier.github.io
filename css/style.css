@@ -16,6 +16,7 @@ global style
   --text-black-900: #000000;
   --text-black-700: #555555;
   --text-black-600: #666666;
+  --text-black-500: #777777;
   --text-black-300: #bbbbbb;
   --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
@@ -32,6 +33,7 @@ body.dark {
   --text-black-900: #ffffff;
   --text-black-700: #ffffff;
   --text-black-600: #bbbbbb;
+  --text-black-500: #aaaaaa;
   --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
   --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
   --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
@@ -878,6 +880,13 @@ about section
   font-size: 16px;
   font-style: italic;
   color: var(--text-black-600);
+  margin: 0;
+}
+
+.about-section .timeline .timeline-item-inner h5 {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--text-black-500);
   margin: 0;
 }
 
